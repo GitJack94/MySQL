@@ -1,0 +1,30 @@
+A. Employees with salary >= 2200:
+
+SELECT ename, sal
+FROM Empl
+WHERE sal >= 2200;
+
+B. Employees without commission:
+
+SELECT *
+FROM Empl
+WHERE comm IS NULL;
+
+C. Employees with salary not in the range 2500 to 4000:
+
+SELECT ename, sal
+FROM Empl
+WHERE sal NOT BETWEEN 2500 AND 4000;
+
+D. Display the name of an employee whose name contains "A" as the third alphabet:
+
+SELECT ename
+FROM Empl
+WHERE SUBSTRING(ename, 3, 1) = 'A';
+
+E. Display the name of an employee whose name contains "T" as the last alphabet:
+
+SELECT ename
+FROM Empl
+WHERE RIGHT(ename, 1) = 'T';
+
